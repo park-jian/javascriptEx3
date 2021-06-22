@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+   
+  function total(firstWord, secondWord, targetWord) {
+    firstWord = "aaa";
+    secondWord = "a";
+    targetWord = "aaaa";
+    const aASCII = 97;
+    
+    let sumfirst="";
+    for(let i=0; i < firstWord.length; i++){
+      //숫자를 문자로  
+      // console.log(String.fromCharCode(aASCII));
+      
+      
+      //문자를 숫자로
+       //  console.log(firstWord.charCodeAt(i)-aASCII);
+
+        // if(firstWord.charCodeAt(i)-aASCII != "0"){
+            sumfirst += firstWord.charCodeAt(i)-aASCII;
+       // }
+
+     
+    }
+   // console.log(sumfirst);
+    let sumSecond="";
+    for(let i=0; i < secondWord.length; i++){
+      //숫자를 문자로  
+      // console.log(String.fromCharCode(aASCII));
+      
+      
+      //문자를 숫자로
+       //  console.log(secondWord.charCodeAt(i)-aASCII);
+
+       //  if(secondWord.charCodeAt(i)-aASCII != "0"){
+            sumSecond += secondWord.charCodeAt(i)-aASCII;
+      //  }
+
+     
+    }
+    let sumTarget="";
+    for(let i=0; i < targetWord.length; i++){
+      //숫자를 문자로  
+      // console.log(String.fromCharCode(aASCII));
+      
+      
+      //문자를 숫자로
+        // console.log(targetWord.charCodeAt(i)-aASCII);
+
+       //  if(targetWord.charCodeAt(i)-aASCII != "0"){
+        sumTarget += targetWord.charCodeAt(i)-aASCII;
+      //  }
+
+     
+    }
+   // console.log(sumTarget);
+  //  console.log(Number(sumfirst) + Number(sumSecond));
+    if(Number(sumTarget) === (Number(sumfirst) + Number(sumSecond))){
+        console.log(Number(sumTarget));
+    }else{
+        console.log("false");
+    }
+};
+total();
+</script>
+
+
+
+</body>
+</html>

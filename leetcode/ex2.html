@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let nums=[2,5,1,3,4,7];
+        let n = 3;
+        
+        let nums_A = nums.splice(0,n);     //이거 n-1아님?
+        
+        console.log(nums_A);
+        console.log(nums);
+        
+        let newNums=[];
+        let j=0;
+        for(let i=0; i < 2n; i+2){
+                //방법 1
+                newNums[j++]=nums_A[i];
+                newNums[j++]=nums[i];
+
+               
+            
+        }
+        for(let j=0; j < 6; j++){
+            console.log(j +","+newNums[j]);
+        }
+
+
+    </script>
+</body>
+</html>
